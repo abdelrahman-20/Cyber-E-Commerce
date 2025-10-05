@@ -5,6 +5,13 @@ function toggleCart() {
   cart.classList.toggle("active");
 }
 
+// Toggle Navbar Links (For Mobile & Small Screens)
+let navMenu = document.getElementById("nav-menu");
+
+function toggleMenu() {
+  navMenu.classList.toggle("active");
+}
+
 // Add Items To The Cart
 var all_products_json;
 let productCart = [];
@@ -69,9 +76,17 @@ function removeCartItem(idx) {
 
 // Scroll Up
 const scrollUp = document.querySelector(".back-to-top");
+
 scrollUp.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 });
+
+// Switch Big-Image in Items Page
+let bigImage = document.getElementById("big-image");
+
+function changeItemImage(imgSrc) {
+  bigImage.src = imgSrc;
+}

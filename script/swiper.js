@@ -23,4 +23,18 @@ var swiper = new Swiper(".sales-section", {
     prevEl: ".swiper-button-prev",
   },
   loop: true,
+  breakpoints: {
+    1600: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    0: {
+      slidesPerView: 2,
+    },
+  },
 });
