@@ -15,7 +15,10 @@
       <!-- CSS Styling -->
       <link rel="stylesheet" href="./style/style.css" />
 
-      <title>Cyber All Products</title>
+      <!-- JavaScript Files -->
+
+      <!-- Page Title & Icon -->
+      <title>Cyber-Checkout</title>
     </head>
     <body>
       <!-- Start Header -->
@@ -97,109 +100,66 @@
       </div>
       <!-- End Cart -->
 
-      <!-- Start Top Page -->
-      <div class="top-page">
+      <!-- Start Checkout -->
+      <section class="checkout">
         <div class="container">
-          <h1>Explore The Feature of Technology</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            eveniet provident eos quasi culpa. Blanditiis, nostrum. Facere, eum
-            aliquid nobis est aut numquam illo explicabo assumenda rerum. Iste,
-            non perspiciatis!
-          </p>
-        </div>
-      </div>
-      <!-- End Top Page -->
-
-      <!-- Start All-Products -->
-      <div class="all-products">
-        <div class="container">
-          <span onclick="toggleFilter()" class="btn-filter">
-            Filter<i class="fa-solid fa-filter"></i>
-          </span>
-
-          <div class="filter">
-            <h2>Filter</h2>
-
-            <!-- Categories -->
-            <div class="filter-item">
-              <h4>Categories</h4>
-              <div class="content">
-                <div class="item">
-                  <input type="checkbox" name="mobile" id="mobile" />
-                  <label for="mobile">Mobile</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="tablets" id="tablets" />
-                  <label for="tablets">Tablets</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="TVs" id="TVs" />
-                  <label for="TVs">TVs</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="watches" id="watches" />
-                  <label for="watches">Watches</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="electronics" id="electronics" />
-                  <label for="electronics">Electronics</label>
-                </div>
+          <form action="">
+            <div class="address">
+              <h2>Your Delivery Address</h2>
+              <div class="inputs">
+                <label for="email">email</label>
+                <input type="email" id="email" />
+                <label for="name">name</label>
+                <input type="text" id="name" />
+                <label for="address">address</label>
+                <input type="text" id="address" />
+                <label for="phone">phone</label>
+                <input type="text" id="phone" />
               </div>
             </div>
 
-            <!-- Brands -->
-            <div class="filter-item">
-              <h4>Brand</h4>
-              <div class="content">
-                <div class="item">
-                  <input type="checkbox" name="apple" id="apple" />
-                  <label for="apple">Apple</label>
+            <div class="coupon">
+              <h2>Coupon Code</h2>
+              <div class="inputs">
+                <label for="coupon">Coupon</label>
+                <input type="text" id="coupon" />
+              </div>
+            </div>
+          </form>
+
+          <div class="order-summary">
+            <h2>Order Summary</h2>
+
+            <div class="items">
+              <div class="cart-item">
+                <img src="./img/product/product1.jpg" alt="product1" />
+                <div class="content">
+                  <h4>Lorem ipsum dolor sit amet.</h4>
+                  <p class="item-price">120$</p>
                 </div>
-                <div class="item">
-                  <input type="checkbox" name="samsung" id="samsung" />
-                  <label for="samsung">Samsung</label>
+              </div>
+
+              <div class="cart-item">
+                <img src="./img/product/product3.jpg" alt="product1" />
+                <div class="content">
+                  <h4>Lorem ipsum dolor sit amet.</h4>
+                  <p class="item-price">120$</p>
                 </div>
-                <div class="item">
-                  <input type="checkbox" name="lenovo" id="lenovo" />
-                  <label for="lenovo">Lenovo</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="dell" id="dell" />
-                  <label for="dell">Dell</label>
-                </div>
-                <div class="item">
-                  <input type="checkbox" name="other" id="other" />
-                  <label for="other">Other</label>
-                </div>
+              </div>
+
+              <div class="total">
+                <p>Total:</p>
+                <span>123$</span>
+              </div>
+
+              <div class="order">
+                <button>Place Order</button>
               </div>
             </div>
           </div>
-
-          <div id="products-dev" class="products"></div>
         </div>
-
-        <div class="pagination">
-          <span class="btn-page prev"
-            ><i class="fa-solid fa-backward-step"></i
-          ></span>
-
-          <a href="#"> <span class="num-page active">1</span></a>
-          <a href="#"> <span class="num-page">2</span></a>
-          <a href="#"> <span class="num-page">3</span></a>
-
-          <span class="btn-page next"
-            ><i class="fa-solid fa-forward-step"></i
-          ></span>
-        </div>
-      </div>
-      <!-- End All-Products -->
-
-      <!-- Start Back-To-Top -->
-      <div class="back-to-top">
-        <p>Back-To-Top</p>
-      </div>
-      <!-- End Back-To-Top -->
+      </section>
+      <!-- End Checkout -->
 
       <!-- Start Footer -->
       <footer>
@@ -271,10 +231,6 @@
         </div>
       </footer>
       <!-- End Footer -->
-
-      <!-- JavaScript Files -->
-      <script src="./script/script.js" defer></script>
-      <script src="./script/all_products.js" defer></script>
     </body>
   </html>
 </html>
