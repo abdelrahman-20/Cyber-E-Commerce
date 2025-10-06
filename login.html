@@ -14,11 +14,14 @@
 
       <!-- CSS Styling -->
       <link rel="stylesheet" href="./style/style.css" />
+      <link rel="stylesheet" href="./style/register.css" />
 
       <!-- JavaScript Files -->
+      <script src="./script/script.js" defer></script>
+      <script src="./script/all_products.js" defer></script>
 
       <!-- Page Title & Icon -->
-      <title>Cyber-Checkout</title>
+      <title>Cyber Log-In</title>
     </head>
     <body>
       <!-- Start Header -->
@@ -57,7 +60,7 @@
                 class="fa-regular fa-circle-xmark btn-close-menu"
               ></i>
               <img class="logo_menu" src="img/logo-black.png" alt="Logo" />
-              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./index.html">Home</a></li>
               <li><a href="./allProducts.html">All products</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact</a></li>
@@ -104,72 +107,44 @@
       </div>
       <!-- End Cart -->
 
-      <!-- Start Checkout -->
-      <section class="checkout">
-        <div class="container">
-          <form action="">
-            <div class="address">
-              <h2>Your Delivery Address</h2>
-              <div class="inputs">
-                <label for="email">email</label>
-                <input type="email" id="email" />
-                <label for="name">name</label>
-                <input type="text" id="name" />
-                <label for="address">address</label>
-                <input type="text" id="address" />
-                <label for="phone">phone</label>
-                <input type="text" id="phone" />
-              </div>
-            </div>
+      <!-- Start Sign-In Form -->
+      <div class="signin sec-form">
+        <div class="form-container">
+          <p class="title">Welcome Back</p>
 
-            <div class="coupon">
-              <h2>Coupon Code</h2>
-              <div class="inputs">
-                <label for="coupon">Coupon</label>
-                <input type="text" id="coupon" />
-              </div>
-            </div>
+          <form action="" class="form">
+            <input type="email" placeholder="Email" id="email" />
+            <input type="password" placeholder="Password" id="password" />
+
+            <p class="page-link">
+              <a href="#" class="page-link-label">Forgot Password</a>
+            </p>
+            <button class="form-btn">Login</button>
           </form>
+          <p class="signup-link">
+            Don't Have An Account <a href="#" class="signup-label">Signup</a>
+          </p>
 
-          <div class="order-summary">
-            <h2>Order Summary</h2>
+          <div class="buttons-container">
+            <div class="apple-login-buuton">
+              <i class="fa-brands fa-apple"></i>
+              <span>Login with Apple</span>
+            </div>
 
-            <div class="items">
-              <div class="cart-item">
-                <img src="./img/product/product1.jpg" alt="product1" />
-                <div class="content">
-                  <h4>Lorem ipsum dolor sit amet.</h4>
-                  <p class="item-price">120$</p>
-                </div>
-              </div>
-
-              <div class="cart-item">
-                <img src="./img/product/product3.jpg" alt="product1" />
-                <div class="content">
-                  <h4>Lorem ipsum dolor sit amet.</h4>
-                  <p class="item-price">120$</p>
-                </div>
-              </div>
-
-              <div class="total">
-                <p>Total:</p>
-                <span>123$</span>
-              </div>
-
-              <div class="order">
-                <button>Place Order</button>
-              </div>
+            <div class="google-login-button">
+              <i class="fa-brands fa-google"></i>
+              <span>Login with Google</span>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Checkout -->
+      </div>
+      <!-- Start Sign-In Form -->
 
       <!-- Start Footer -->
       <footer>
         <div class="container">
           <div class="main-col">
-            <img src="./img/logo-white.png" alt="" />
+            <img src="./img/Logo.svg" width="170px" alt="" />
             <div class="hotline">
               <i class="fa-solid fa-headset"></i>
               <div class="text">

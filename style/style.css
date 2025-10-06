@@ -1051,9 +1051,11 @@ footer .bottom-footer .container .payment img:hover {
   .sales .container .products .product .stars i {
     font-size: 12px;
   }
-
+  footer .container .main-col,
   footer .container .col {
-    width: 70%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

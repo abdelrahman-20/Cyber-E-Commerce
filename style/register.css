@@ -1,0 +1,204 @@
+/* Global Styling */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: content-box;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: #fcb700;
+  --main-color: rgb(146, 30, 255);
+  --main-color: yellowgreen;
+  --dark-color: #222222;
+  --border-color: #2222222a;
+  --paragraph-color: #666666;
+  --dark-red: #d01418;
+  --name-item: dodgerblue;
+}
+
+body {
+  background-color: #f5f6f9;
+  margin-top: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--dark-color);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
+}
+/* ------------------------------------ */
+
+.sec-form {
+  width: 100%;
+  margin: 250px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-form .form-container {
+  width: 70%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.sec-form .form-container .title {
+  margin: 10px auto;
+  padding-bottom: 20px;
+
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sec-form .form-container .form {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sec-form .form-container .form input {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.sec-form .form-container .form .page-link {
+  text-align: end;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.sec-form .page-link-label {
+  font-size: 1.2rem;
+}
+
+.sec-form a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.sec-form button {
+  width: 90%;
+  /* min-width: 100px; */
+  margin: 10px auto;
+  padding: 20px;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sec-form button:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sec-form .singin-link,
+.sec-form .signup-link {
+  padding: 0 20px;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.sec-form .signup-link .signin-label,
+.sec-form .signup-link .signup-label {
+  font-size: 1.2rem;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+.buttons-container i {
+  font-size: 22px;
+}
+
+.apple-login-buuton,
+.google-login-button {
+  width: 90%;
+  padding: 20px 15px;
+  font-size: 1.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.apple-login-buuton {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+}
+.google-login-button {
+  border: 2px solid #c5c5c5;
+  color: var(--dark-color);
+}
+
+@media (max-width: 650px) {
+  .sec-form .form-container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
