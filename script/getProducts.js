@@ -31,7 +31,7 @@ fetch("script/items.json")
             </div>
 
             <h3 class="product-name">
-              <a href="#">${product.name}</a>
+              <a href="./items.html">${product.name}</a>
             </h3>
 
             <div class="stars">
